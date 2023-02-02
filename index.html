@@ -81,28 +81,57 @@
       transform: translate(-50%, -50%);
       color: white;
     }
-
-    .col-3 h5 {
-      font-weight: bold;
+    .hero-man {
+      position: absolute;
+      bottom: -30%;
+      right: -3%;
+      transform: translate(-50%, -50%);
     }
+
+    .col-sm h5 {
+      font-weight: bold;
+      opacity: 0.3;
+    }
+
     .icons {
       font-size: 30px;
-      color: #1d5d9a;
+      color: #66aee0;
     }
 
     @media (max-width: 767px) {
       .hero-text h2 {
-        font-size: 30px;
-        font-weight: bold;
-      }
-
-      .hero-text h5 {
         font-size: 20px;
         font-weight: bold;
       }
 
+      .hero-text h5 {
+        font-size: 15px;
+        font-weight: bold;
+      }
+
       .hero-text p {
-        font-size: 16px;
+        font-size: 12px;
+      }
+
+      .hero-text {
+        text-align: left;
+        position: absolute;
+        top: 12%;
+        left: 25%;
+        transform: translate(-50%, -50%);
+        color: white;
+      }
+
+      button {
+        background: #66aee0;
+        color: white;
+        border-radius: 5px;
+        font-size: 14px;
+        font-weight: bold;
+        padding: 10px;
+        cursor: pointer;
+        transition: all 150ms ease-in-out;
+        border: none;
       }
     }
   </style>
@@ -115,6 +144,12 @@
           class="img-fluid rounded"
         />
       </div>
+      <div class="hero-man">
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/065/542/original/man-possess.png?1675372295"
+          alt="man possess"
+        />
+      </div>
       <div class="hero-text">
         <h2>POSSESS</h2>
         <h5>The Secret</h5>
@@ -123,25 +158,25 @@
       </div>
 
       <div class="row m-5">
-        <div class="col-3">
+        <div class="col-sm">
           <i class="fa-solid fa-truck icons"></i>
           <h5>Free Delivery</h5>
           <p>ON ALL OFFERS</p>
         </div>
 
-        <div class="col-3">
+        <div class="col-sm">
           <i class="fa-solid fa-piggy-bank icons"></i>
           <h5>Big Savings</h5>
           <p>WEEKEN SALES</p>
         </div>
 
-        <div class="col-3">
+        <div class="col-sm">
           <i class="fa-solid fa-credit-card icons"></i>
           <h5>Secure Payments</h5>
           <p>ALL CARDS ACCEPTED</p>
         </div>
 
-        <div class="col-3">
+        <div class="col-sm">
           <i class="fa-solid fa-guarani-sign icons"></i>
           <h5>Money Guaranteed</h5>
           <p>30 DAY MONEY BACK</p>
