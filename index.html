@@ -105,6 +105,37 @@
       transition: all 200ms ease-in-out;
     }
 
+    .container-overlay {
+      position: relative;
+      width: 50%;
+    }
+
+    .overlay {
+      position: absolute;
+      bottom: 100%;
+      left: 0;
+      right: 0;
+      overflow: hidden;
+      width: 100%;
+      height: 0;
+      transition: 0.5s ease;
+    }
+
+    .container-overlay:hover .overlay {
+      bottom: 0;
+      height: 100%;
+    }
+
+    .text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      text-align: center;
+    }
+
     @media (max-width: 576px) {
       .hero-text h2 {
         font-size: 20px;
@@ -254,26 +285,82 @@
         </div>
       </div>
 
-      <div>
+      <div class="m-5">
         <h2 class="text-center">FIND YOUR SKIN MATCH</h2>
         <p class="text-center">Specially made just for you</p>
       </div>
 
+      <div class="row">
+        <div class="col-sm mb-4 container-overlay">
+          <img
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/066/695/original/Urban_for_Men.png?1675972634"
+            alt="Urban for men"
+            class="img-fluid rounded"
+            id="images-used"
+          />
+          <div class="overlay">
+            <div class="text">
+              <button>Order Now</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm mb-4 container-overlay">
+          <img
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/066/694/original/NovAge_Ecollagen.png?1675972289"
+            alt="Urban for men"
+            class="img-fluid rounded"
+            id="images-used"
+          />
+          <div class="overlay">
+            <div class="text">
+              <button>Order Now</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm mb-4 container-overlay">
+          <img
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/066/696/original/lip-balm.png?1675973912"
+            alt="Lip Balm"
+            class="img-fluid rounded"
+            id="images-used"
+          />
+          <div class="overlay">
+            <div class="text">
+              <button>Order Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <div class="row mt-5">
-        <div class="col-sm mb-3">
+        <div class="col-sm mb-3 container-overlay">
           <img
             src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/066/623/original/North_for_Men.png?1675928256"
             alt="North for men"
             class="img-fluid rounded"
+            id="images-used"
           />
+          <div class="overlay">
+            <div class="text">
+              <button>Order Now</button>
+            </div>
+          </div>
         </div>
 
-        <div class="col-sm mb-3">
+        <div class="col-sm mb-3 container-overlay">
           <img
             src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/066/622/original/NovAge_Skin_Care.png?1675928171"
             alt="NovAge Skin Care"
             class="img-fluid rounded"
+            id="images-used"
           />
+          <div class="overlay">
+            <div class="text">
+              <button>Order Now</button>
+            </div>
+          </div>
         </div>
       </div>
     </div>
