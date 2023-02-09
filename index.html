@@ -32,6 +32,15 @@
     body {
       font-family: "Poppins", sans-serif;
     }
+    h1 {
+      color: #66aee0;
+      font-weight: bolder;
+    }
+
+    a {
+      text-decoration: none;
+      color: #fff;
+    }
 
     .hero-text h2 {
       font-size: 64px;
@@ -67,7 +76,6 @@
 
     .hero-image {
       position: relative;
-      background-size: cover;
     }
 
     .hero-text {
@@ -107,7 +115,6 @@
 
     .container-overlay {
       position: relative;
-      width: 50%;
     }
 
     .overlay {
@@ -135,7 +142,9 @@
       transform: translate(-50%, -50%);
       text-align: center;
     }
-
+    .text-description {
+      padding: 60px 20px;
+    }
     @media (max-width: 576px) {
       .hero-text h2 {
         font-size: 20px;
@@ -170,6 +179,14 @@
 
       .container-fluid {
         padding: 20px;
+      }
+
+      .text-description p {
+        font-size: 20px;
+      }
+
+      .text-description h1 {
+        font-size: 40px;
       }
 
       button {
@@ -237,51 +254,76 @@
 
     <div class="container-fluid">
       <div class="row mt-3">
-        <div class="col-sm mb-4">
+        <div class="col-sm mb-4 container-overlay">
           <img
             src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/066/620/original/Venture_Blue.png?1675928008"
             alt="venture-blue-men"
             class="img-fluid rounded"
             id="images-used"
           />
+          <div class="overlay">
+            <div class="text">
+              <button>Order Now</button>
+            </div>
+          </div>
         </div>
 
-        <div class="col-sm mb-4">
+        <div class="col-sm mb-4 container-overlay">
           <img
             src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/066/619/original/Venture_Green.png?1675927840"
             alt="venture-green-men"
             class="img-fluid rounded"
             id="images-used"
           />
+          <div class="overlay">
+            <div class="text">
+              <button>Order Now</button>
+            </div>
+          </div>
         </div>
       </div>
 
       <div class="row">
-        <div class="col-sm mb-5">
+        <div class="col-sm mb-5 container-overlay">
           <img
             src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/066/618/original/Incognito.png?1675927776"
             alt="incognito"
             class="img-fluid rounded"
             id="images-used"
           />
+          <div class="overlay">
+            <div class="text">
+              <button>Order Now</button>
+            </div>
+          </div>
         </div>
 
-        <div class="col-sm mb-5">
+        <div class="col-sm mb-5 container-overlay">
           <img
             src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/066/617/original/Giordani_Gold.png?1675927727"
             alt="Giordani Gold"
             class="img-fluid rounded"
             id="images-used"
           />
+          <div class="overlay">
+            <div class="text">
+              <button>Order Now</button>
+            </div>
+          </div>
         </div>
 
-        <div class="col-sm mb-5">
+        <div class="col-sm mb-5 container-overlay">
           <img
             src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/066/621/original/Possess.png?1675928112"
             alt="Possess Fragrance"
             class="img-fluid rounded"
             id="images-used"
           />
+          <div class="overlay">
+            <div class="text">
+              <button>Order Now</button>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -334,8 +376,8 @@
         </div>
       </div>
 
-      <div class="row mt-5">
-        <div class="col-sm mb-3 container-overlay">
+      <div class="row mt-2">
+        <div class="col-sm mb-4 container-overlay">
           <img
             src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/066/623/original/North_for_Men.png?1675928256"
             alt="North for men"
@@ -349,7 +391,7 @@
           </div>
         </div>
 
-        <div class="col-sm mb-3 container-overlay">
+        <div class="col-sm mb-4 container-overlay">
           <img
             src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/066/622/original/NovAge_Skin_Care.png?1675928171"
             alt="NovAge Skin Care"
@@ -360,6 +402,56 @@
             <div class="text">
               <button>Order Now</button>
             </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="m-5">
+        <h2 class="text-center">RECENT NEWS YOU MUST READ</h2>
+        <p class="text-center">
+          Oriflame Sweden granting consumers free access
+        </p>
+      </div>
+
+      <div class="row">
+        <div class="col-sm mb-4">
+          <img
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/066/701/original/coverstory.png?1675975760"
+            alt="coverstory picture"
+            class="img-fluid rounded"
+          />
+        </div>
+
+        <div class="col-sm">
+          <div class="text-description">
+            <h1 class="m-5">Beauty inspired by real life.</h1>
+            <p class="m-5">
+              Since the very beginning, we have always considered nature to be
+              an important part of how we do things and have built our
+              reputation upon offering people safe, reliable products that
+              respect our environment. Our commitment to develop beauty products
+              you can believe in and trust is defined by our product standards.
+              <br />
+              <br />
+              Because we're from Sweden we have different view on beauty. For
+              us, it's not only how you look, but how you live, feel and act.
+              It's a way of life: to be healthy, enjoy beautiful skin, express
+              yourself and have fun.
+
+              <br />
+              <br />
+              We believe beauty is not only products, but also inspiration and
+              growth. This is where we share facts, tips and how to’s to boost
+              your confidence and help you stay on top of trends.
+            </p>
+            <button>
+              <a
+                href="https://www.oriflame.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Read More</a
+              >
+            </button>
           </div>
         </div>
       </div>
