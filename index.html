@@ -159,10 +159,88 @@
       color: #fff;
     }
 
+    input[type="text"],
+    input[type="password"] {
+      width: 100%;
+      padding: 15px;
+      margin: 5px 0 22px 0;
+      display: inline-block;
+      border: none;
+      background: #f1f1f1;
+    }
+
+    input[type="text"]:focus,
+    input[type="password"]:focus {
+      background-color: #ddd;
+      outline: none;
+    }
+
+    hr {
+      border: 1px solid #f1f1f1;
+      margin-bottom: 25px;
+    }
+
+    .cancelbtn {
+      padding: 14px 20px;
+      background-color: #f44336;
+    }
+
+    .cancelbtn,
+    .signupbtn {
+      float: left;
+      width: 50%;
+    }
+
+    .container-form {
+      padding: 30px;
+    }
+
+    .d-flex::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+
+    @media (max-width: 300px) {
+      .cancelbtn,
+      .signupbtn {
+        width: 100%;
+      }
+    }
+
+    @media (max-width: 900px) {
+      .hero-man {
+        top: 25%;
+        left: 75%;
+      }
+
+      .hero-text {
+        top: 20%;
+        left: 28%;
+      }
+
+      .hero-text h2 {
+        font-size: 40px;
+      }
+
+      .hero-text h5 {
+        font-size: 24px;
+        font-weight: bold;
+      }
+
+      .hero-text p {
+        font-size: 16px;
+      }
+
+      .rounded-circle {
+        width: 40%;
+        height: auto;
+      }
+    }
+
     @media (max-width: 576px) {
       .hero-text h2 {
-        font-size: 20px;
-        font-weight: bold;
+        font-size: 22px;
       }
 
       .hero-text h5 {
@@ -501,7 +579,7 @@
                 alt="beautician"
                 class="img-fluid shadow rounded-circle"
               />
-              <h6 class="m-2"><strong>Angela Lawrence</strong></h6>
+              <h6 class="client-name m-2"><strong>Angela Lawrence</strong></h6>
               <br />Beautician
             </div>
           </div>
@@ -527,6 +605,91 @@
           </div>
         </div>
       </div>
+      <div class="subscribe-now m-5">
+        <div>
+          <h2 class="text-center">SUBSCRIBE NOW</h2>
+          <p class="text-center">
+            <strong>25% DISCOUNT ON SUBSCRIPTION</strong>
+          </p>
+          <br />
+          <br />
+          <form action="action_page.php" style="border: 1px solid #ccc">
+            <div class="container-form">
+              <h1>Sign Up</h1>
+              <p>Please fill in this form to create an account.</p>
+              <hr />
+
+              <label for="email"><b>Email</b></label>
+              <input
+                type="text"
+                placeholder="Enter Email"
+                name="email"
+                required
+              />
+
+              <label for="psw"><b>Password</b></label>
+              <input
+                type="password"
+                placeholder="Enter Password"
+                name="psw"
+                required
+              />
+
+              <label for="psw-repeat"><b>Repeat Password</b></label>
+              <input
+                type="password"
+                placeholder="Repeat Password"
+                name="psw-repeat"
+                required
+              />
+
+              <label>
+                <input
+                  type="checkbox"
+                  checked="checked"
+                  name="remember"
+                  style="margin-bottom: 15px"
+                />
+                Remember me
+              </label>
+
+              <p>
+                By creating an account you agree to our
+                <a href="#" style="color: dodgerblue">Terms & Privacy</a>.
+              </p>
+
+              <div class="d-flex">
+                <button type="button" class="cancelbtn">Cancel</button>
+                <button type="submit" class="signupbtn">Sign Up</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
     </div>
+    <footer class="client-say">
+      <hr />
+      <div class="container-footer m-5">
+        <div class="row">
+          <div class="col-sm">
+            <h6><strong> About Me</strong></h6>
+            <p>
+              My name is <strong>Temitope Lawal,</strong> a veterinarian and a
+              front-end developer in Nigeria. <br />
+              This is my design for the shecodes beauty challenge
+            </p>
+          </div>
+
+          <div class="col-sm">
+            <h6><strong> Contact</strong></h6>
+            <p>
+              +234 8083 5032 55
+              <br />
+              Ibadan, Oyo State, Nigeria
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
