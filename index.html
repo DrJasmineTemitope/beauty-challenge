@@ -323,7 +323,7 @@
         <h2>POSSESS</h2>
         <h5>The Secret</h5>
         <p>Possess the secret man</p>
-        <button>Order Now</button>
+        <button class="orderNow">Order Now</button>
       </div>
 
       <div class="row m-5">
@@ -364,7 +364,7 @@
           />
           <div class="overlay">
             <div class="text">
-              <button>Order Now</button>
+              <button class="orderNow">Order Now</button>
             </div>
           </div>
         </div>
@@ -378,7 +378,7 @@
           />
           <div class="overlay">
             <div class="text">
-              <button>Order Now</button>
+              <button class="orderNow">Order Now</button>
             </div>
           </div>
         </div>
@@ -394,7 +394,7 @@
           />
           <div class="overlay">
             <div class="text">
-              <button>Order Now</button>
+              <button class="orderNow">Order Now</button>
             </div>
           </div>
         </div>
@@ -408,7 +408,7 @@
           />
           <div class="overlay">
             <div class="text">
-              <button>Order Now</button>
+              <button class="orderNow">Order Now</button>
             </div>
           </div>
         </div>
@@ -422,7 +422,7 @@
           />
           <div class="overlay">
             <div class="text">
-              <button>Order Now</button>
+              <button id="orderNow">Order Now</button>
             </div>
           </div>
         </div>
@@ -443,7 +443,7 @@
           />
           <div class="overlay">
             <div class="text">
-              <button>Order Now</button>
+              <button id="orderNow">Order Now</button>
             </div>
           </div>
         </div>
@@ -457,7 +457,7 @@
           />
           <div class="overlay">
             <div class="text">
-              <button>Order Now</button>
+              <button id="orderNow">Order Now</button>
             </div>
           </div>
         </div>
@@ -471,7 +471,7 @@
           />
           <div class="overlay">
             <div class="text">
-              <button>Order Now</button>
+              <button id="orderNow">Order Now</button>
             </div>
           </div>
         </div>
@@ -487,7 +487,7 @@
           />
           <div class="overlay">
             <div class="text">
-              <button>Order Now</button>
+              <button id="orderNow">Order Now</button>
             </div>
           </div>
         </div>
@@ -501,7 +501,7 @@
           />
           <div class="overlay">
             <div class="text">
-              <button>Order Now</button>
+              <button id="orderNow">Order Now</button>
             </div>
           </div>
         </div>
@@ -759,5 +759,30 @@
         </div>
       </nav>
     </footer>
+
+    <script>
+      function orderNow() {
+        let name = prompt("What is your name?");
+        let whatsApp = prompt("What is your WhatsApp Number");
+        let order = prompt("Are you Picking today?");
+
+        if (order === "Yes") {
+          alert(
+            "🎉Congratulations " +
+              name +
+              "! you will have your goods for Free with 10% discount 💃"
+          );
+        } else {
+          alert(
+            "Dear " +
+              name +
+              " ! you are not eligible for our 10% discount 😥 but worryless you still got free delivery!💃"
+          );
+        }
+      }
+
+      let orderNowButton = document.querySelector(".orderNow");
+      orderNowButton.addEventListener("click", orderNow);
+    </script>
   </body>
 </html>
